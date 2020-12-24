@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Randevu";
+    Layout = "~/Views/shared/sekreter.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<form action="/Randevu_İslemleri/Randevu" method="post">
+    <br /><br />
+    <div id="randevu">
+        <input id="search" type="text" name="TC_Kimlik" class="form-control" placeholder="TC kimlik numarasını giriniz...">
+    </div>
+</form>
+<div id="center-content">
+    <div class="table-responsive box-body">
+        <table id="example1" class="table table-bordered table-hover table-striped">
+            <tr>
+                <th>Hasta TC kimlik no</th>
+                <th>Protokol</th>
+                <th>Hasta İsmi</th>
+                <th>Doğum tarihi</th>
+                <th>Doğum Yeri</th>
+                <th>Kurumu</th>
+                <th>Adres</th>
+                <th>Uyruk</th>
+                <th>Telefon</th>
+                <th>E-Posta</th>
+                <th>Randevu vermek için tıkla...</th>
+            </tr>
+            @foreach (var RandevuV in Model.Randevu)
+            {
+                <tr>
+                    <td> @Html.Raw(RandevuV.TC_Kimlik)</td>
+                    <td> @Html.Raw(RandevuV.Hasta_No)</td>
+                    <td> @Html.Raw(RandevuV.Hasta)</td>
+                    <td> @Html.Raw(RandevuV.Dogum_Tarihi)</td>
+                    <td> @Html.Raw(RandevuV.Dogum_Yeri)</td>
+                    <td> @Html.Raw(RandevuV.Kurumu)</td>
+                    <td> @Html.Raw(RandevuV.Adres)</td>
+                    <td> @Html.Raw(RandevuV.Uyruk)</td>
+                    <td> @Html.Raw(RandevuV.Telefon)</td>
+                    <td> @Html.Raw(RandevuV.E_Posta)</td>
+                    <td>
+                        @Html.ActionLink("Randevu Ver", "RandevuVer", "Randevu_Verme", new { id = RandevuV.TC_Kimlik }, htmlAttributes: new { @class = "label label-primary" })
+
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    table, th {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 4%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table, td {
+        border: 2px solid black;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 4%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #search {
+        margin-left: 20%;
+        width: 300px;
+    }
+</style>
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "Klinik";
+    Layout = "~/Views/shared/sekreter.cshtml";
+    
+ }
+@model HastaneOtomasyonu.Models.RandevuVerme
+
+<form action="/Klinik_Ekran/Klinik" method="post">
+    <br /><br />
+    <label id="h2">KLİNİK İŞLEMLERİ</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div id="Klinik">
+        <label >Klinik Ekranı İçin Doktoru Seçiniz:</label>&nbsp;&nbsp;
+        <select name="Personel" id="lsbSol" class="test" size="1" >
+            <option></option>
+            @foreach (var item in Model.Klinik)
+            {
+                <option value="@item.Personel">
+                    @Html.DisplayFor(ModelItem => item.Personel)
+                </option>    
+            }
+          
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Tarihini Seçiniz:</label>&nbsp;&nbsp;
+        <input type="date" name="Randevu_Tarihi"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="SEÇ" value="Seç"  />
+    </div>
+</form>
+
+<div id="center-content">
+    <div class="table-responsive box-body">
+        <table id="example1" class="table table-bordered table-hover table-striped">
+            <tr>
+                <th>Hasta TC kimlik no</th>
+                <th>Protokol</th>
+                <th>Hasta İsmi</th>
+                <th>Randevu Tarihi</th>
+                <th>Randevu Saati</th>
+                <th>Muayene Adı</th>
+                <th>Doktor</th>
+                <th>Muayene onayı vermek için tıkla...</th>
+            </tr>
+            @foreach (var RandevuV in Model.Klinik)
+            {
+                <tr>
+                    <td> @Html.Raw(RandevuV.TC_Kimlik)</td>
+                    <td> @Html.Raw(RandevuV.Protokol)</td>
+                    <td> @Html.Raw(RandevuV.Hastaİsmi)</td>
+                    <td> @Html.Raw(RandevuV.Randevu_Tarihi)</td>
+                    <td> @Html.Raw(RandevuV.Randevu_Saati)</td>
+                    <td> @Html.Raw(RandevuV.Muayene_Adi)</td>
+                    <td> @Html.Raw(RandevuV.Personel)</td>
+                    <td>
+                        @Html.ActionLink("Muayene onayı ver", "KlinikDetay", "Klinik_Detay", new { id = @RandevuV.Personel, idm = @RandevuV.TC_Kimlik },
+                        htmlAttributes: new { @class = "label label-primary" })
+
+                    </td>
+                        
+                </tr>
+            
+            }
+        </table>
+        
+    </div>
+</div>
+
+<style>
+    table, th {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 4%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table, td {
+        border: 2px solid black;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 4%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #Klinik{
+        padding-left:10%;
+        padding-top:5%;
+    }
+    #h2{
+        font-size:20px;
+        font-family:'Times New Roman';
+        color:#3c8dbc;
+        padding-left:35%;
+        padding-top:2%;
+    }
+</style>

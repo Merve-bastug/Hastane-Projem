@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "RandevuVer";
+    Layout = "~/Views/shared/sekreter.cshtml";
+}
+@model HastaneOtomasyonu.Models.RandevuVerme
+
+<form action="/Randevu_Verme/RandevuVer" method="post">
+    <div id="kayit">
+        <label id="h2">Randevu verilecek hastanın TC Kimlik numarası :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="TC_Kimlik" value="@ViewBag.GelenId">
+        <br/><br />
+        <label id="h3">Randevu vermek için ilgili alanları doldurunuz...</label>
+        <br /><br />
+        <label id="dl">Muayene</label>
+        &nbsp;&nbsp;
+        <select id="sec" name="Muayene_Adi" size="1">
+            <option></option>
+            <option value="Ortidonti">Ortidonti</option>
+            <option value="Periondoloji">Periondoloji</option>
+            <option value="Protez">Protez</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="dl">Doktor Adı</label>
+        &nbsp;&nbsp;
+        <select name="Personel" id="lsbSol" class="test" size="1">
+          <option></option>
+            @foreach (var item in Model.RandevuKayit)
+            {
+                <option value="@item.Personel">
+                    @Html.DisplayFor(ModelItem => item.Personel)-
+                    @Html.DisplayFor(ModelItem => item.Muayene_Adi)
+                </option>
+            }
+        </select>
+
+        <br /><br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <label id="dl">Randevu Tarihi</label>
+        &nbsp;&nbsp;
+        <input type="date" name="Randevu_Tarihi" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="dl">Randevu Saati</label>
+        &nbsp;&nbsp;
+        <input type="time" name="Randevu_Saati" />
+        <br /><br />
+       
+            <input id="btn" type="submit" value="Kaydet" />
+        
+</div>
+</form>
+<style>
+    #kayit {
+        padding-top:15%;
+        margin-left:20%;
+
+    }
+    #h3 {
+        font-size:20px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    #btn {
+        margin-left:60%;
+    }
+</style>

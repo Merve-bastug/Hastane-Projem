@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "P_Kayit";
+    Layout = "~/Views/shared/Bilgi_islem.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title><meta charset="utf-8" />
+</head>
+<body>
+    <form action="/Personel_Kayit/P_Kayit" method="post">
+        <div id="kayit">
+            <label id="h2">PERSONEL EKLEMEK İÇİN AŞAĞIDAKİ BİLGİLERİ DOLDURUNUZ...</label><br /><br />
+            <label id="dl">Personel TC Kimlik</label>&nbsp;&nbsp;
+            <input type="text" name="TC" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label id="dl">Personel Ad - Soyad</label>&nbsp;&nbsp;
+            <input type="text" name="Personel" /> <br /><br />
+            <label id="dl">Kullanıcı Adı</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="Kullanici_Adi" /> <br /><br />
+            <label id="dl">Şifre</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="sifre" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label id="dl">Branş</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="sec" name="Brans">
+                <option></option>
+                <option value="Ortidonti">Ortidonti</option>
+                <option value="Periondoloji">Periondoloji</option>
+                <option value="Protez">Protez</option>
+                <option value="Bilgi İşlem">Bilgi İşlem</option>
+                <option value="Sekreter">Sekreter</option>
+                <option value="Ambar">Ambar</option>
+                <option value="Elektrik">Elektrik</option>
+                <option value="Vezne">Vezne</option>
+            </select> <br /><br />
+            <label id="dl">Ünvan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="sec" name="unvan">
+                <option></option>
+                <option value="1">Doktor</option>
+                <option value="2">Hemşire</option>
+                <option value="3">Sekreter</option>
+                <option value="4">Bilgi İşlem</option>
+                <option value="5">Teknisyen</option>
+                <option value="6">Vezne</option>
+            </select><br /><br />
+            <input id="btn" type="submit" value="Kaydet" />
+        </div>
+        </form>
+</body>
+</html>
+        <style>
+            #kayit {
+                margin-left: 15%;
+            }
+            #dl {
+                color: cornflowerblue;
+                margin-top: 10px;
+            }
+            #h2 {
+                color: cornflowerblue;
+                margin-top: 10%;
+                font-size: 25px;
+            }
+            #btn {
+                margin-top: 30px;
+                margin-left: 60%;
+                background-color: aliceblue;
+            }
+        </style>
+    </form>
+

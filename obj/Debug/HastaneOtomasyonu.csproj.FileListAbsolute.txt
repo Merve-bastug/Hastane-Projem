@@ -1,0 +1,99 @@
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll.config
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.pdb
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Antlr3.Runtime.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Newtonsoft.Json.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Helpers.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Mvc.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Optimization.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Razor.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\WebGrease.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Antlr3.Runtime.pdb
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\Newtonsoft.Json.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Optimization.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Helpers.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Mvc.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Razor.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.csprojResolveAssemblyReference.cache
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.dll
+c:\users\merve\documents\visual studio 2013\Projects\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.pdb
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll.config
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\HastaneOtomasyonu.pdb
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\WebGrease.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.dll
+C:\Users\Merve\Desktop\HastaneOtomasyonu\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.pdb
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll.config
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\HastaneOtomasyonu.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\HastaneOtomasyonu.pdb
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Antlr3.Runtime.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Newtonsoft.Json.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Net.Http.Formatting.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Helpers.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Http.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Http.WebHost.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Mvc.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Optimization.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Razor.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\WebGrease.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Antlr3.Runtime.pdb
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\Newtonsoft.Json.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Optimization.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Net.Http.Formatting.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Helpers.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Http.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Http.WebHost.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Mvc.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.Razor.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\bin\System.Web.WebPages.Razor.xml
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.csprojResolveAssemblyReference.cache
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.dll
+C:\Users\Merve\Desktop\tez1\HastaneOtomasyonu\obj\Debug\HastaneOtomasyonu.pdb

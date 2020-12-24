@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "HastaVezne";
+    Layout = "~/Views/shared/Vezne.cshtml";
+}
+@model HastaneOtomasyonu.Models.RandevuVerme
+<form action="/Doktor_Vezne/DoktorVezne" method="post">
+    <div id="Doktor">
+        <label>Doktor TC Kimlik No</label>&nbsp;&nbsp;
+        <input type="text" name="Doktor_TC" value="@ViewBag.Tc" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Başlangıç Tarihi</label>&nbsp;&nbsp;
+        <input type="date" name="BaslangicTarihi" placeholder="YYYY-MM-DD" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Bitiş Tarihi</label>&nbsp;&nbsp;
+        <input type="date" name="BitisTarihi" placeholder="YYYY-MM-DD" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        @*@Html.ActionLink("Seç", "Sec", "Doktor_Vezne")*@
+        <input type="submit" name="Seç" value="LİSTELE" />
+    </div>
+</form> 
+<form action="/Doktor_Vezne/Kaydet" method="post">
+    <div id="Doktor">
+        <label>Doktor TC Kimlik No</label>&nbsp;&nbsp;
+        <input type="text" name="Doktor_TC" value="@ViewBag.Tc" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label >Toplam Maaş</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="Toplam_Maas" value="@ViewBag.Maas"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Ayı seçiniz:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="sec" name="Maas_Ayi">
+            <option></option>
+            <option value="Ocak">Ocak</option>
+            <option value="Şubat">Şubat</option>
+            <option value="Mart">Mart</option>
+            <option value="Nisan">Nisan</option>
+            <option value="Mayıs">Mayıs</option>
+            <option value="Haziran">Haziran</option>
+            <option value="Temmuz">Temmuz</option>
+            <option value="Ağustos">Ağustos</option>
+            <option value="Eylül">Eylül</option>
+            <option value="Ekim">Ekim</option>
+            <option value="Kasım">Kasım</option>
+            <option value="Aralık">Aralık</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="Seç" value="Kaydet" />
+        <br /><br />
+        </div>
+</form>
+    <div id="center-content">
+        <div class="table-responsive box-body">
+            <table id="example1" class="table table-bordered table-hover table-striped">
+                <tr>
+                    <th>Doktor TC kimlik no</th>
+                    <th>Doktor İsmi</th>
+                    <th>Randevu Tarihi</th>
+                    <th>Tedavi Adı</th>
+                    <th>Tedavi Puanı</th>
+                </tr>
+                @foreach (var RandevuV in Model.DoktorPuan)
+                {
+                    <tr>
+                        <td> @Html.Raw(RandevuV.Doktor_TC)</td>
+                        <td> @Html.Raw(RandevuV.Doktorismi)</td>
+                        <td> @Html.Raw(RandevuV.RandevuTarihi)</td>
+                        <td> @Html.Raw(RandevuV.TedaviAdi)</td>
+                        <td> @Html.Raw(RandevuV.TedaviPuan)</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+    <style>
+        table, th {
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 4%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table, td {
+            border: 2px solid black;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 4%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #Doktor {
+            padding-top: 5%;
+            padding-left: 20px;
+        }
+
+        #maas {
+            padding-left: 20%;
+        }
+    </style>
+

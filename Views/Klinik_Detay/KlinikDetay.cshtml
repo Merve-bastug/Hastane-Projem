@@ -1,0 +1,124 @@
+﻿@{
+    ViewBag.Title = "KlinikDetay";
+    Layout = "~/Views/shared/sekreter.cshtml";
+}
+@model HastaneOtomasyonu.Models.RandevuVerme
+<form action="/Klinik_Detay/KlinikDetay" method="post">
+    <div id="detay">
+        <label id="h2">Muayene onayı verilecek hastanın TC Kimlik numarası :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="TC_Kimlik" value="@ViewBag.GelenId" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="h2">Doktor Adı:</label>&nbsp;&nbsp;
+        <input type="text" name="Personel" value="@ViewBag.Personel">
+        <br /><br />
+        <label id="h2">Uygulanan Tedavi:</label>&nbsp;&nbsp;
+        <select id="sec" name="Tedavi" size="1">
+            <option></option>
+            <option value="Küretaj">Küretaj</option>
+            <option value="Detertraj">Detertraj</option>
+            <option value="Diş çekimi">Diş çekimi</option>
+            <option value="Sabit ortidonti">Sabit ortidonti</option>
+            <option value="Gingivektomi">Gingivektomi</option>
+            <option value="Porselen kron">Porselen kron</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="h2">Uygulanan Çene:</label>&nbsp;&nbsp;
+        <select id="sec" name="cene" size="1">
+            <option></option>
+            <option value="Üst çene">Üst çene</option>
+            <option value="Alt çene">Alt çene</option>
+            <option value="Sağ üst yarım çene">Sağ üst yarım çene</option>
+            <option value="Sol üst yarım çene">Sol üst yarım çene</option>
+            <option value="Sağ alt yarım çene">Sağ alt yarım çene</option>
+            <option value="Sol alt yarım çene">Sol alt yarım çene</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Kurumunu Seçiniz:</label>&nbsp;&nbsp;
+        <select name="Kurumu" id="lsbSol" class="test" size="1">
+            <option></option>
+            <option value="SGK">SGK</option>
+            <option value="BAĞKUR">BAĞKUR</option>
+            <option value="Sigortasız">Sigortasız</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label id="h2">Tedavi Sonucu:</label>&nbsp;&nbsp;
+        <select name="Sonuc" id="lsbSol" class="test" size="1">
+            <option></option>
+            <option value="Tedavi Edildi">Tedavi Edildi</option>
+            <option value="Tedavi Edilmedi">Tedavi Edilmedi</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Kaydet"/>
+</div>
+</form>
+
+    <div id="center-content">
+        <div class="table-responsive box-body">
+            <table id="example1" class="table table-bordered table-hover table-striped">
+                <tr>
+                    <th>Muayene Numarası</th>
+                    <th>Hasta TC kimlik no</th>
+                    <th>Doktor Adı</th>
+                    <th>Uygulanan Tedavi</th>
+                    <th>Uygulanan Çene</th>
+                    <th>Kurumu</th>
+                    <th>Tedavi Tarihi</th>
+                    <th>Tedavi Saati</th>
+                    <th>Tedavi Sonucu</th>
+                    <th>Tedavi Ücreti</th>
+                    <th>Tedavi Ücret Durumu</th>
+                    <th>Tedavi Ücreti Ödeme</th>
+
+
+                </tr>
+                @foreach (var RandevuV in Model.TedaviDetay)
+                {
+                    <tr>
+                        <td> @Html.Raw(RandevuV.Muayene_id)</td>
+                        <td> @Html.Raw(RandevuV.TC_Kimlik)</td>
+                        <td> @Html.Raw(RandevuV.Personel)</td>
+                        <td> @Html.Raw(RandevuV.Tedavi)</td>
+                        <td> @Html.Raw(RandevuV.cene)</td>
+                        <td> @Html.Raw(RandevuV.Kurumu)</td>
+                        <td> @Html.Raw(RandevuV.Tedavi_Tarihi)</td>
+                        <td> @Html.Raw(RandevuV.Tedavi_Saati)</td>
+                        <td> @Html.Raw(RandevuV.Sonuc)</td>
+                        <td> @Html.Raw(RandevuV.Ucret)</td>
+                        <td> @Html.Raw(RandevuV.Ucret_Durumu)</td>
+                        <td>
+                            @Html.ActionLink("Ücreti Ödeme ", "Odeme", "Klinik_Detay", new { id = RandevuV.Muayene_id }, htmlAttributes: new { @class = "label label-primary" })
+
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+    <style>
+        table, th {
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 4%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table, td {
+            border: 2px solid black;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 4%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #detay {
+            padding-top: 5%;
+            padding-left: 10%;
+        }
+    </style>

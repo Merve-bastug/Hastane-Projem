@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "giris";
+}
+<body>
+        <form action="/login/giris" method="post">
+            <div id="baslik">
+                    <h3>AĞIZ DİŞ SAĞLIĞI MERKEZİ KULLANICI GİRİŞİ</h3>
+            </div>
+                <div id="giris">
+                    <img src="~/Content/resim/Adsız.png" class="rsm"/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                    <div id="grs">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                        <label id="lbl">Kullanıcı Adı:</label>
+                        &nbsp; &nbsp; &nbsp;
+                        <input id="txt" type="text" name="Kullanici_Adi" />
+                        <br /><br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                        <label id="lbl">Şifre:</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                        <input id="txt" type="text" name="sifre" />
+                        <br /><br />
+                        <input id="btn" type="submit" value="Giriş" />
+                    </div>
+                </div>
+          
+        </form>
+</body>
+
+
+<style>
+    body {
+      background-color:#ecf0f5;
+
+    }
+
+    #giris {
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+        #giris h2 {
+            font-family: Andalus;
+            color: black;
+            font-size: 30px;
+        }
+
+    #lbl {
+        color: black;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #btn {
+        background-color: #3c8dbc;
+        color: white;
+        border-radius: 10px;
+        font-size: 17px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        padding-right:20px;
+        padding-left:20px;
+        margin-left:27%;
+    }
+
+    #txt {
+        padding-bottom: 10px;
+    }
+    #baslik{
+        background-color:#3c8dbc;
+       border-radius:20px;
+
+    }
+        #baslik h3 {
+            font-size:20px;
+            font-family:'Times New Roman', Times, serif;
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-left:20%;
+            color:white;
+        }
+
+    .rsm {
+        float:left;
+        padding:0 10px 10px 0;
+        border-radius:20px;
+        border
+    }
+    #grs {
+        margin-top:6%;
+    }
+</style>
+
